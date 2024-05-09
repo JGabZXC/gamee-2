@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --ff-base: "Montserrat", sans-serif;
+    --ff-secondary: "EB Garamond", serif;
+
+    --fc-1: #F57D1F;
+    --fc-2: #F9DBBB;
+    --fc-3: #1D2B53;
+
+    --bg-main: #81689D;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-main);
+}
+
+.container {
+    min-height: 100vh;
+    text-align: center;
+    font-family: var(--ff-base);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container > div {
+    padding-block: 40px;
+}
+
+.blevel {
+    color: var(--fc-1);
+}
+
+.bhp {
+    font-family: var(--ff-secondary);
+    font-size: 150px;
+    color: var(--fc-1);
+}
+
+.blevel {
+    font-family: var(--ff-secondary);
+    font-weight: 1000;
+    font-size: 50px;
+}
+
+.skill-set {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-set p {
+    margin-inline: 50px;
+    font-size: 35px;
+    padding: 10px 30px;
+    color: var(--fc-2);
+    background-color: var(--fc-3);
+    border-radius: 15px;
+}
+
+.hover {
+    background: var(--fc-2) !important;
+    color: var(--fc-3) !important;
+}
+
+@media (width <= 1200px) {
+    .blevel {
+        font-size: 50px;
+    }
+
+    .bhp {
+        font-size: 120px;
+    }
+    .skill-set p {
+        margin-inline: 10px;
+        font-size: 20px;
+    }
+}
+
+@media (width <= 940px) {
+    .blevel {
+        font-size: 40px;
+    }
+
+    .bhp {
+        font-size: 80px;
+    }
+
+    .skill-set {
+        flex-direction: column;
+    }
+
+    .skill-set p {
+        margin-block: 5px;
+        font-size: 25px;
+    }
+}
